@@ -14,7 +14,7 @@ let count = 0
 const incrementBtn = document.getElementById('increment-btn');
 // declaring a function to be called when the 'increment-btn' button is clicked. A function is executed only if it's called (in this case it is called by the addEventListener method)
 incrementBtn.addEventListener('click', function increment() {
-    // console.log("The button was clicked") // checking the function is called when the button is clicked
+    // console.log('The button was clicked') // checking the function is called when the button is clicked
     count++ // increment variable by 1; it can also be count += 1 or count = count + 1
     // console.log(count); // testing out the count
     countEl.textContent = count // modifying and rendering the 'count-el' HTML element content on to the page
@@ -28,5 +28,3 @@ saveBtn.addEventListener('click', function save(){
     countEl.textContent = 0 // render count-el HTML element to 0 on page when the 'save' button is clicked
     count = 0 // set 'count' variable to 0
 })
-
-
